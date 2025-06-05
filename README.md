@@ -69,13 +69,13 @@ The main interface simulates three trays inside a growing cabin. Each tray is ma
 
     🔴 Red – Needs Attention (pH outside the healthy range)
 
-This gives a quick, visual overview of the cabin's condition.
+This gives a quick, visual overview of the unit's condition.
 
 **Unit Radio Buttons**
 
 Clicking the radio button on a unit reveals a table of 20 plants within that tray.  
 
-**My Enhancement**
+**My Enhancement**  
 Each plant includes:
 
 A circle indicating the age of the crop - the more complete the circle, the older the crop.
@@ -98,6 +98,6 @@ This would enhance the app’s usefulness, especially for remote workers who rel
 
 **🔍 Unit Panel**
 
-Each unit also includes a Unit ID and an Inspect button. When clicked, this opens a modal displaying the last 10 sensor readings, sorted by timestamp (most recent first). This allows deeper inspection of the unit’s condition over time.
+Each unit also includes a Unit ID and an Inspect button. When clicked, this opens a modal displaying the last 10 problematic sensor readings, sorted by timestamp (most recent first). This allows deeper inspection of the unit’s condition over time.
 
 
