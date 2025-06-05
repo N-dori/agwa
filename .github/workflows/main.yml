@@ -26,4 +26,4 @@ jobs:
       run: npm run test -- --watchAll=false
 
     - name: Build frontend
-      run: vite build
+      run: npx vite build
