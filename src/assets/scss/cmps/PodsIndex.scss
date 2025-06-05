@@ -1,0 +1,116 @@
+.pods-container {
+    justify-items: center;
+    background: #222222c7;
+    padding-bottom: 1rem;
+    border-radius: 12px;
+    .input-container {
+                position: relative;
+                padding-block: 2em;
+                transform: translate(3%);
+                
+                .inspect-btn, .unit-input {
+                    min-height: 2.5rem;
+                    padding-inline: .5rem;
+                    border: 3px solid var(--clr4);
+                    border-radius: 8px;
+                    font-size: 1rem;
+                }
+                .unit-input {
+                    font-weight: 500;
+                    width: 16em;
+                }
+                .inspect-btn {
+                    position: relative;
+                    left: -60px;
+                    background: var(--clr1);
+                    color: var(--clr0);
+                    opacity: .95;
+                    cursor: pointer;
+                    box-shadow: none;
+
+                }
+    } 
+    .unit-status {
+        background: var(--clr1);
+        color: var(--clr4);
+        padding: 1.3em;
+        font-size: 1.1em;
+        font-weight: 600;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5) ;
+        border-radius: 12px;
+        opacity: .8;
+        margin-top: 0px;
+        &.unhealthy {
+            color: var(--clr5);
+        }
+    }
+    .pods-wrapper {
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(5,1fr);
+        row-gap: 1.5em;
+        padding-block: 2em;
+        margin-top: -3.5rem;
+
+        .row-name, .pod-container {
+            justify-self: center;
+        }
+
+        .row-name {
+            align-self: end;
+            color: var(--clr0);
+        }
+
+        .pod-container {
+            border-radius: 50%;
+            padding: 0.6em; 
+        }
+
+        .pod-tooltip-wrapper {
+            position: relative;
+            display: flex;
+            justify-self: center;
+            min-height: 3em;
+
+            .pod-tooltip {
+            display: none;
+            opacity: 0;
+            white-space: nowrap;
+            background: var(--clr1);
+            color: var(--clr0);
+            font-size: .9em;
+            border-radius: 8px;
+            padding: 0.75em ;
+            position: absolute;
+            z-index: 10;
+            left: 120%;
+            bottom: 110%;
+            transform: translateX(-50%);
+            pointer-events: none;
+            padding-top: 0em;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 100%;
+                    left: 30%;
+                    margin-left: -8px;
+                    border-width: 8px;
+                    border-style: solid;
+                    border-color: #222 transparent transparent transparent;
+                }
+
+                .pod-age {
+                    margin-bottom: 0;
+                }
+            }
+
+            &:hover .pod-tooltip,
+            &:focus-within .pod-tooltip {
+            display: block;
+            opacity: 1;
+            pointer-events: auto;
+            }
+        }
+
+    }
+}

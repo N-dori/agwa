@@ -1,0 +1,19 @@
+.user-msg {
+    position: absolute;
+    top: -10em;
+    left: 50%;
+    background-color: var(--clr4);
+    color: var(--clr0);
+    min-height: 5em;
+    min-width: 10em;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    transition: top .4s ease-in-out, opacity .4s ease-in-out;
+    font-size: 1.1em;
+    padding: 1rem;
+    opacity: 0;
+        &.active {
+            top:5em;
+            opacity: 1;
+        }
+}

@@ -1,0 +1,21 @@
+// primery
+:root{
+    --clr1:#448cfb;;
+    --clr2:#e1ebf7;;
+    --clr3:#222222;
+    --clr4:#f4f4f4; // for header
+    --clr5:#ededed;
+    --clr6:rgb(249, 247, 246);
+    --clr7:rgb(61, 137, 245);
+    --clr8:rgb(153, 153, 153);
+    --clr9:rgb(83, 34, 229);
+
+}
+$google-blue: #448cfb;
+$button-active-blue: #1669F2;
+// breakpoints
+$breakpoint-sm: 576px;    // Small (phones)
+$breakpoint-md: 768px;    // Medium (tablets)
+$breakpoint-lg: 992px;    // Large (desktops)
+$breakpoint-xl: 1200px;   // Extra large (large desktops)
+$breakpoint-xxl: 1400px;  // Extra extra large

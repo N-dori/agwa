@@ -1,0 +1,22 @@
+// ## setup
+@use '../scss/setup/vars.scss';
+@use '../scss/setup/mixins';
+@use '../scss/setup/basic.scss';
+@use '../scss/setup/layout.scss';
+@use '../scss/setup/typography.scss';
+@use '../scss/setup/helpers.scss';
+@use '../scss/setup/variables';
+
+// ## cmps
+@use '../scss/cmps/AppHeader.scss';
+@use '../scss/cmps/Modal.scss';
+@use '../scss/cmps/UnitsIndex.scss';
+@use '../scss/cmps/PodsIndex.scss';
+@use '../scss/cmps/UserMsg.scss';
+
+// @use '../scss/cmps/AppFooter.scss';
+// @use '../scss/cmps/SkeletonLoader.scss';
+// ## views 
+@use '../scss/views/MonitorIndex.scss';
+
+
