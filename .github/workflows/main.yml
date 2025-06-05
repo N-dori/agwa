@@ -20,7 +20,7 @@ jobs:
         node-version: '18'
 
     - name: Install frontend dependencies
-      run: npm install
+      run: npm install --legacy-peer-deps
 
     - name: Run frontend tests
       run: npm run test -- --watchAll=false
