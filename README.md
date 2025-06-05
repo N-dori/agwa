@@ -21,7 +21,7 @@ Run the backend with:
 
     uvicorn main:app
 
-To run the frontend of the application, follow these steps:
+To run the frontend of the application follow these steps:  
 Install dependencies:
 
     npm install
@@ -31,7 +31,7 @@ Run the frontend with:
     npm run dev
 
 ## Testing
-Backend Tests    
+**Backend Tests**    
 This project includes backend tests like, payload validation, classification logic, and retrieval of alerts using pytest. These tests covers the basic API functionality and also focus on production-critical scenarios to ensure strong code.
 
 In addition I added tests which I think can be valuable in the real-world:
@@ -49,7 +49,7 @@ Run the following command to execute all tests:
     pytest
 
 
-Frontend Tests  
+**Frontend Tests**  
 These tests suite covers functionality of the monitor , ensuring components and titles render correctly, and visual logic like color indicators behaves as expected. It also verifies critical data flow operations, such as fetching alerts for problematic readings and sending randomly generated sensor data to the backend.
 
 To run the frontend tests suites:
