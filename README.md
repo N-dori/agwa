@@ -21,7 +21,7 @@ Run the backend with:
 
     uvicorn main:app
 
-To run the frontend of the application follow these steps:  
+To run the frontend of the application follow these steps:    
 Install dependencies:
 
     npm install
