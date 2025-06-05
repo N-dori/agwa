@@ -12,7 +12,7 @@ Inspired by Jewish philosophy to make the world a better place, the aim is to im
 
 ## Installation
 To install the project follow these steps:  
-Open your terminal and go to the backend directory:
+Open your terminal and go to the backend directory and install:
  
     cd backend
     pip install -r requirements.txt
@@ -35,9 +35,10 @@ Run the frontend with:
 This project includes backend tests like, payload validation, classification logic, and retrieval of alerts using pytest. These tests covers the basic API functionality and also focus on production-critical scenarios to ensure strong code.
 
 In addition I added tests which I think can be valuable in the real-world:
-A test for timestamp which are out of order ,a test to ensures the system responds correctly with (400 or 422) when malformed JSON is submitted.
+A test for timestamps which are out of order, A test to ensures the system responds correctly with (400 or 422) when malformed JSON is submitted.
 
-**Extra test for Persistent issues - not-yet-implemented in code - test checks if a unit remains in a Needs Attention state for more than 3 hours. which can point a malfunction in hardware, beacuse system needs to fix it as soon as it discovers bad readings  
+**Extra test**  
+for Persistent issues - not-yet-implemented in code - the  test checks if a unit remains in a Needs Attention state for more than 3 hours. which can point a malfunction in hardware, because system needs to fix it as soon as it discovers bad readings  
 
 To run tests for the backend project follow these steps:
 Open your terminal and go to the backend directory:
@@ -64,13 +65,14 @@ When you launch the app, a modal window appears with a brief self-introduction. 
 The main interface simulates three trays inside a growing cabin. Each tray is marked with color to reflect the state of its most recent pH reading:
 
 **My Enhancement**
+
     🟢 Green – Healthy unit (pH in the correct range)
 
     🔴 Red – Needs Attention (pH outside the healthy range)
 
 This gives a quick, visual overview of the cabin's condition.
 
-Unit Radio Buttons
+**Unit Radio Buttons**
 
 Clicking the radio button on a unit reveals a table of 20 plants within that tray. Each plant includes:
 
