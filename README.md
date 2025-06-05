@@ -31,13 +31,13 @@ Run the frontend with:
     npm run dev
 
 ## Testing
-Backend Tests
+Backend Tests    
 This project includes backend tests like, payload validation, classification logic, and retrieval of alerts using pytest. These tests covers the basic API functionality and also focus on production-critical scenarios to ensure strong code.
 
 In addition I added tests which I think can be valuable in the real-world:
 A test for timestamp which are out of order ,a test to ensures the system responds correctly with (400 or 422) when malformed JSON is submitted.
 
-Extra test for Persistent issues - not-yet-implemented in code - test checks if a unit remains in a Needs Attention state for more than 3 hours. which can point a malfunction in hardware, beacuse system needs to fix it as soon as it discovers bad readings  
+**Extra test for Persistent issues - not-yet-implemented in code - test checks if a unit remains in a Needs Attention state for more than 3 hours. which can point a malfunction in hardware, beacuse system needs to fix it as soon as it discovers bad readings  
 
 To run tests for the backend project follow these steps:
 Open your terminal and go to the backend directory:
@@ -49,7 +49,7 @@ Run the following command to execute all tests:
     pytest
 
 
-Frontend Tests
+Frontend Tests  
 These tests suite covers functionality of the monitor , ensuring components and titles render correctly, and visual logic like color indicators behaves as expected. It also verifies critical data flow operations, such as fetching alerts for problematic readings and sending randomly generated sensor data to the backend.
 
 To run the frontend tests suites:
