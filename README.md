@@ -24,7 +24,9 @@ To run the frontend of the application, follow these steps:
 Install dependencies:
 
     npm install
-    Run the frontend with:
+
+Run the frontend with:
+
     npm run dev
 
 ## Testing
