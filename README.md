@@ -39,9 +39,12 @@ A test for timestamp which are out of order ,a test to ensures the system respon
 Extra test for Persistent issues - not-yet-implemented in code - test checks if a unit remains in a Needs Attention state for more than 3 hours. which can point a malfunction in hardware, beacuse system needs to fix it as soon as it discovers bad readings  
 
 To run tests for the backend project follow these steps:
-1.Open your terminal and go to the backend directory:
-cd backend
-2.Run the following command to execute all tests:
+Open your terminal and go to the backend directory:
+
+    cd backend
+
+Run the following command to execute all tests:
+
     pytest
 
 
@@ -49,6 +52,7 @@ Frontend Tests
 These tests suite covers functionality of the monitor , ensuring components and titles render correctly, and visual logic like color indicators behaves as expected. It also verifies critical data flow operations, such as fetching alerts for problematic readings and sending randomly generated sensor data to the backend.
 
 To run the frontend tests suites:
+
     npm run test
 
 ## Usage
@@ -58,6 +62,7 @@ When you launch the app, a modal window appears with a brief self-introduction. 
 
 The main interface simulates three trays inside a growing cabin. Each tray is marked with color to reflect the state of its most recent pH reading:
 
+    **My Enhancement**
     🟢 Green – Healthy unit (pH in the correct range)
 
     🔴 Red – Needs Attention (pH outside the healthy range)
@@ -68,15 +73,15 @@ Unit Radio Buttons
 
 Clicking the radio button on a unit reveals a table of 20 plants within that tray. Each plant includes:
 
-    A circle indicating the age of the crop - the more complete the circle, the older the crop.
+A circle indicating the age of the crop - the more complete the circle, the older the crop.
 
-    A tooltip that shows the crop's growth progress in %
+A tooltip that shows the crop's growth progress in %
 
 This design is based on a simple user-focused insight:
 
-    "In the end, what matters most is when the crop is ready to be eaten."
+"In the end, what matters most is when the crop is ready to be eaten."
 
-🍽️ Future Integration Ideas
+**Future Integration Ideas**
 
 There are plans to integrate the app with an external API to fetch additional data such as:
 
@@ -86,7 +91,7 @@ There are plans to integrate the app with an external API to fetch additional da
 
 This would enhance the app’s usefulness, especially for remote workers who rely on cabin-grown food.
 
-🔍 Unit Panel
+**🔍 Unit Panel**
 
 Each unit also includes a Unit ID and an Inspect button. When clicked, this opens a modal displaying the last 10 sensor readings, sorted by timestamp (most recent first). This allows deeper inspection of the unit’s condition over time.
 
