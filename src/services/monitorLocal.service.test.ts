@@ -46,7 +46,7 @@ describe('monitorLocalService', () => {
         {
           id: 'unit1',
           readings: [
-            { temp: 25, pH: 6.5, ec: 2, timestamp: '', id: 'r1' }, // Valid pH
+            { temp: 25, pH: 6.5, ec: 2, timestamp: '', id: 'r1' }, 
           ],
           pods: [],
           validation: undefined,
@@ -54,7 +54,7 @@ describe('monitorLocalService', () => {
         {
           id: 'unit2',
           readings: [
-            { temp: 50, pH: 9, ec: 5, timestamp: '', id: 'r2' }, // Invalid pH
+            { temp: 50, pH: 9, ec: 5, timestamp: '', id: 'r2' }, 
           ],
           pods: [],
           validation: undefined,
@@ -83,21 +83,21 @@ describe('monitorLocalService', () => {
           readings: [
             {
               id: 'r1',
-              pH: 6.5, // valid
+              pH: 6.5, 
               temp: 22,
               ec: 2,
               timestamp: '2025-06-01T10:00:00.000Z',
             },
             {
               id: 'r2',
-              pH: 8.0, // invalid
+              pH: 8.0, 
               temp: 22,
               ec: 2,
               timestamp: '2025-06-02T10:00:00.000Z',
             },
             {
               id: 'r3',
-              pH: 4.0, // invalid
+              pH: 4.0, 
               temp: 22,
               ec: 2,
               timestamp: '2025-06-03T10:00:00.000Z',
