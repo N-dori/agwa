@@ -16,8 +16,14 @@
   &.inspect {
     max-width: 600px;
   }
-  .btn {
-    margin: 0 auto;
+  .content-container {
+    padding-inline: .5em;
+    border: 1px solid var(--clr1);
+    max-height: 500px;
+    overflow-y: scroll;
+    border-radius: 1.2rem;
+    line-height: 25px;
+
   }
   .problematic-readings-container {
     width: 100%;

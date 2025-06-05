@@ -5,11 +5,13 @@
     { "path": "./tsconfig.node.json" }
   ],
     "compilerOptions": {
-    "noEmit": false,
+     "noEmit": true,
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "types": ["jest", "@testing-library/jest-dom"],
-    "lib": ["ES2020", "DOM", "DOM.Iterable"]
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    
   },
-  "include": ["src/**/*.test.ts", "src/**/*.test.tsx"]
+  "include": ["src"],
+  "exclude": ["**/*.test.ts", "**/*.test.tsx", "**/*.test.js", "**/*.test.jsx"]
 }

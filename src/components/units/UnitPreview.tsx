@@ -13,6 +13,7 @@ type UnitPreviewProps = {
   onInspectUnit: () => void
 }
 
+
 export const UnitPreview = ({unit, idx, setSelectedUnit, selectedUnit, onInspectUnit}: UnitPreviewProps) => {
   if(!unit)return 
   const isHealthy = unit?.validation?.classification === classificationsTypes.HEALTHY
@@ -30,7 +31,7 @@ export const UnitPreview = ({unit, idx, setSelectedUnit, selectedUnit, onInspect
     </article>
 
      {selectedUnit === unit.id &&
-     <PodsIndex pods={unit.pods} unitId={unit.id} onInspectUnit={onInspectUnit} status={unit.validation}/>} 
+     <PodsIndex pods={unit.pods} unitId={unit.id} onInspectUnit={onInspectUnit} status={unit.validation} />} 
          
     </>
   )

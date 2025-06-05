@@ -58,7 +58,7 @@ To run the frontend tests suites:
     npm run test
 ## Documentation of thought process  
 
-After reading the home assignment requirements a couple of time and articles on Agwa's website, I began braking down each visual requirement in to small component using [Miro (digital canvas for sketches) for initial planning.](https://miro.com/app/board/uXjVIuWrTeg=/). On the canvas it easy to add and drop ideas much faster than coding! After all the components where in place and I was happy with overall design, I have began generally thinking (in light of the way React works) on which components fetches data what state each will need or pass as props to it's children. planning head can save ton of time developing.  
+After reading the home assignment requirements a couple of time and articles on Agwa's website (to get to know the company and for design inspiration), I began braking down each visual requirement in to small component using [Miro (digital canvas for sketches) for initial planning.](https://miro.com/app/board/uXjVIuWrTeg=/). On the canvas it easy to add and drop ideas much faster than coding! After all the components where in place and I was happy with overall design, I have began generally thinking (in light of the way React works) on which components fetches data what state each will need or pass as props to it's children. planning head can save ton of time developing.  
 When I start a new project I know that frontend take most of the time therefore what I like do is, to start with creating a local service with builder functions to create initial data required for the design. and to store it on the browser local storage. The parent component fetches the data as promise from local storage to simulate async data fetching from the backend. After each major section of code (service functions | React components) I have began describing jest tests for it. After the design was ready the marination to the real service that makes http request to the backend was pretty easy.  
 This process of work save the forth and back between frontend and backend. finally I took some of the functionally I wrote in the local service to python Fast-API backend server and had test for the endpoints.             
 
@@ -104,6 +104,8 @@ This would enhance the app’s usefulness, especially for remote workers who rel
 **🔍 Unit Panel**
 
 Each unit also includes a Unit ID and an Inspect button. When clicked, this opens a modal displaying the last 10 problematic sensor readings, sorted by timestamp (most recent first). This allows deeper inspection of the unit’s condition over time.
+
+## App demo
 
 <p align="center">
   <img src="https://res.cloudinary.com/dii16awkb/image/upload/v1749136294/gxh8eref5x4ban1vjhih.gif" alt="App demo" width="600">

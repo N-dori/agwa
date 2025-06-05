@@ -8,7 +8,7 @@ type PodsIndexProps = {
   pods: Pod[]
   unitId: string
   onInspectUnit: () => void
-  status: {status:string , classification:string } | undefined
+  status: { status:string , classification:string } | undefined
 }
 
 export const PodsIndex = ({pods, unitId, onInspectUnit, status}: PodsIndexProps) => {
