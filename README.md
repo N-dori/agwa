@@ -13,17 +13,17 @@ Inspired by Jewish philosophy to make the world a better place, the aim is to im
 
 ## Installation
 To install the project follow these steps:
-1. Open your terminal and go to the backend directory:
-cd backend
-pip install -r requirements.txt
-Run the backend with:
-uvicorn main:app
+ Open your terminal and go to the backend directory:
+    cd backend
+    pip install -r requirements.txt
+    Run the backend with:
+    uvicorn main:app
 
 To run the frontend of the application, follow these steps:
 1.Install dependencies:
-npm install
-Run the frontend with:
-npm run dev
+    npm install
+    Run the frontend with:
+    npm run dev
 
 ## Testing
 Backend Tests
@@ -38,14 +38,14 @@ To run tests for the backend project follow these steps:
 1.Open your terminal and go to the backend directory:
 cd backend
 2.Run the following command to execute all tests:
-pytest
+    pytest
 
 
 Frontend Tests
 These tests suite covers functionality of the monitor , ensuring components and titles render correctly, and visual logic like color indicators behaves as expected. It also verifies critical data flow operations, such as fetching alerts for problematic readings and sending randomly generated sensor data to the backend.
 
 To run the frontend tests suites:
-npm run test
+    npm run test
 
 ## Usage
 When you launch the app, a modal window appears with a brief self-introduction. You can close this modal by clicking the "Start Technical Exercise" button.
