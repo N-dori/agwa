@@ -11,8 +11,8 @@ Inspired by Jewish philosophy to make the world a better place, the aim is to im
 
 
 ## Installation
-To install the project follow these steps:
- Open your terminal and go to the backend directory:
+To install the project follow these steps:  
+Open your terminal and go to the backend directory:
  
     cd backend
     pip install -r requirements.txt
@@ -31,7 +31,7 @@ Run the frontend with:
     npm run dev
 
 ## Testing
-**Backend Tests**    
+**Backend Tests**      
 This project includes backend tests like, payload validation, classification logic, and retrieval of alerts using pytest. These tests covers the basic API functionality and also focus on production-critical scenarios to ensure strong code.
 
 In addition I added tests which I think can be valuable in the real-world:
