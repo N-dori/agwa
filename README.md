@@ -14,13 +14,15 @@ Inspired by Jewish philosophy to make the world a better place, the aim is to im
 ## Installation
 To install the project follow these steps:
  Open your terminal and go to the backend directory:
+ 
     cd backend
     pip install -r requirements.txt
     Run the backend with:
     uvicorn main:app
 
 To run the frontend of the application, follow these steps:
-1.Install dependencies:
+Install dependencies:
+
     npm install
     Run the frontend with:
     npm run dev
