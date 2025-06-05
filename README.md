@@ -40,7 +40,7 @@ A test for timestamps which are out of order, A test to ensures the system respo
 **Extra test**  
 for Persistent issues - not-yet-implemented in code - the  test checks if a unit remains in a Needs Attention state for more than 3 hours, What can point at a malfunction in hardware, because system needs to fix it as soon as it discovers bad readings  
 
-To run tests for the backend project follow these steps:
+To run tests for the backend project follow these steps:  
 Open your terminal and go to the backend directory:
 
     cd backend
@@ -60,11 +60,10 @@ To run the frontend tests suites:
 ## Usage
 When you launch the app, a modal window appears with a brief self-introduction. You can close this modal by clicking the "Start Technical Exercise" button.
 
-🌱 Main Display
+🌱 **Main Display**
 
 The main interface simulates three trays inside a growing cabin. Each tray is marked with color to reflect the state of its most recent pH reading:
 
-**My Enhancement**
 
     🟢 Green – Healthy unit (pH in the correct range)
 
@@ -74,7 +73,10 @@ This gives a quick, visual overview of the cabin's condition.
 
 **Unit Radio Buttons**
 
-Clicking the radio button on a unit reveals a table of 20 plants within that tray. Each plant includes:
+Clicking the radio button on a unit reveals a table of 20 plants within that tray.  
+
+**My Enhancement**
+Each plant includes:
 
 A circle indicating the age of the crop - the more complete the circle, the older the crop.
 
