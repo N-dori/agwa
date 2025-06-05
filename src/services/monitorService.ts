@@ -61,7 +61,7 @@ const createUnits = () => {
 
 const getInitialSensorData = () => {
     const units = localStorageService.load(UNITS_STORAGE_KEY)
-        if(!units || units.length < 1) {
+        if(!units || !units?.length) {
             const units = createUnits()
             localStorageService.store(UNITS_STORAGE_KEY,units)
             return units
@@ -70,9 +70,14 @@ const getInitialSensorData = () => {
 }
 
 const getRandomSensorData = async () => {
-    const sensorData = createUnits()
+    try {
+        const sensorData = createUnits()
         const res = await httpService.post('sensor', sensorData)
         return res
+    } catch (err) {
+        console.error('Error sending random sensor data:', err)
+        return null
+    }
 }
 
 
