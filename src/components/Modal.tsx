@@ -18,7 +18,7 @@ const getBtnTxt = () => {
 }
   return (
    type === modalTypes.INTRO ? 
-    <section className="modal-container">
+    <section className="modal-container flex-col flex-jc">
       <h2 className="center"> Self-Introduction & Growth </h2>
       <p className="about-me center bold">Hi AGWA, I'm Nadav Dori :) 38 year old originally from Jerusalem I have been married to the beautiful Ella for over 11 years and we have 4 little ones </p>
       <p className="intro">

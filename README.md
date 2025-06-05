@@ -105,4 +105,6 @@ This would enhance the app’s usefulness, especially for remote workers who rel
 
 Each unit also includes a Unit ID and an Inspect button. When clicked, this opens a modal displaying the last 10 problematic sensor readings, sorted by timestamp (most recent first). This allows deeper inspection of the unit’s condition over time.
 
-
+<p align="center">
+  <img src="https://res.cloudinary.com/dii16awkb/image/upload/v1749136294/gxh8eref5x4ban1vjhih.gif" alt="App demo" width="600">
+</p>
