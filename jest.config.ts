@@ -10,6 +10,10 @@ export default {
         useESM: true,
       },
     ],
+    '^.+\\.[jt]sx?$': 'babel-jest', // This line is crucial for JS/TS/JSX/TSX files
+  },
+  moduleNameMapper: {
+    '\\.svg$': '<rootDir>/__mocks__/svgMock.js',
   },
   setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
 };
