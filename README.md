@@ -38,7 +38,7 @@ In addition I added tests which I think can be valuable in the real-world:
 A test for timestamps which are out of order, A test to ensures the system responds correctly with (400 or 422) when malformed JSON is submitted.
 
 **Extra test**  
-for Persistent issues - not-yet-implemented in code - the  test checks if a unit remains in a Needs Attention state for more than 3 hours. which can point a malfunction in hardware, because system needs to fix it as soon as it discovers bad readings  
+for Persistent issues - not-yet-implemented in code - the  test checks if a unit remains in a Needs Attention state for more than 3 hours, What can point at a malfunction in hardware, because system needs to fix it as soon as it discovers bad readings  
 
 To run tests for the backend project follow these steps:
 Open your terminal and go to the backend directory:
