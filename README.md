@@ -56,11 +56,16 @@ These tests suite covers functionality of the monitor , ensuring components and 
 To run the frontend tests suites:
 
     npm run test
+## Documentation of thought process  
+
+After reading the home assignment requirements a couple of time and articles on Agwa's website, I began braking down each visual requirement in to small component using [Miro (digital canvas for sketches) for initial planning.](https://miro.com/app/board/uXjVIuWrTeg=/). On the canvas it easy to add and drop ideas much faster than coding! After all the components where in place and I was happy with overall design, I have began generally thinking (in light of the way React works) on which components fetches data what state each will need or pass as props to it's children. planning head can save ton of time developing.  
+When I start a new project I know that frontend take most of the time therefore what I like do is, to start with creating a local service with builder functions to create initial data required for the design. and to store it on the browser local storage. The parent component fetches the data as promise from local storage to simulate async data fetching from the backend. After each major section of code (service functions | React components) I have began describing jest tests for it. After the design was ready the marination to the real service that makes http request to the backend was pretty easy.  
+This process of work save the forth and back between frontend and backend. finally I took some of the functionally I wrote in the local service to python Fast-API backend server and had test for the endpoints.             
 
 ## Usage
 When you launch the app, a modal window appears with a brief self-introduction. You can close this modal by clicking the "Start Technical Exercise" button.
 
-🌱 **Main Display**
+**Main Display**
 
 The main interface simulates three trays inside a growing cabin. Each tray is marked with color to reflect the state of its most recent pH reading:
 

@@ -16,7 +16,9 @@
   &.inspect {
     max-width: 600px;
   }
-
+  .reasons-list>* {
+    text-align: start;
+  }
   .problematic-readings-container {
     width: 100%;
       .unit-id {
