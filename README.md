@@ -17,7 +17,9 @@ To install the project follow these steps:
  
     cd backend
     pip install -r requirements.txt
-    Run the backend with:
+
+Run the backend with:
+
     uvicorn main:app
 
 To run the frontend of the application, follow these steps:
