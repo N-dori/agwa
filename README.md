@@ -8,8 +8,7 @@ Inspired by Jewish philosophy to make the world a better place, the aim is to im
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Installation
 To install the project follow these steps:
@@ -64,7 +63,7 @@ When you launch the app, a modal window appears with a brief self-introduction. 
 
 The main interface simulates three trays inside a growing cabin. Each tray is marked with color to reflect the state of its most recent pH reading:
 
-    **My Enhancement**
+**My Enhancement**
     🟢 Green – Healthy unit (pH in the correct range)
 
     🔴 Red – Needs Attention (pH outside the healthy range)
